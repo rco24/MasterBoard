@@ -1,0 +1,117 @@
+Git Commands (cheat sheet - RCO)
+	Inicializar un nuevo repositorio
+	>git init
+
+	Clonar un repo
+	>git clone <url>	//If repo is not found try using Windows Credential Manager and remove any git credential that is not related to the repo you attempt to clone
+
+	Para bajar los ultimos cambios del repositorio
+	>git pull origin main		//main en este ejemplo es la rama donde estamos ubicados
+
+	Muestra que archivos se agregaron/modificaron
+	 >git status
+
+	Para ver en que rama estoy
+	>git branch --show-current
+
+	Para cambiar de rama
+	git switch <nombre-rama>
+	git checkout <nombre-rama>
+
+	Para crear mi propia rama
+	>git switch -c feature/new-branch-name  //flag 'c' significa create, luego va el nombre de la rama
+	>git checkout -b feature/new-branch-name // flag 'b' significa branch
+
+	Para guardar cambios temporalmente en local
+	>git stash
+	>git stash list	//muestra los cambios guardados con stash
+	>git stash apply 	//recupera los cambios de stash y mantiene lo guardado
+	>git stash pop		//los cambios guardados se recuperan y se borra lo guardado en stash
+
+	Agregar archivos para el commit
+	>git add <filename.extesion>
+	>git add . 	//Agrega todos los archivos nuevos/modificados al commit
+
+	Para hacer commit de los cambios
+	>git commit -m "Message for the commit"
+
+	Para hacer push de un commit
+	>git push -u origin main	//aqui esta subiendo la rama 'main' a GitHub.
+	>git push -u origin HEAD	//aqui esta subiendo la rama actual donde estas posicionado, con HEAD no se necesita especificar el nombre de la rama
+
+	Para mostrar los logs de los commits hechos
+	>git log
+	>git log --oneline	//Version resumida
+	>git log --oneline -decorate --graph --all	//version resumida y ordenada
+
+	Configure Git identity
+	git config --global user.name "Ronald Castellon"
+	git config --global user.email "ronald.castellon@jalasoft.com"
+
+	Para mostrar a donde esta apuntando nuestro git
+	>git remote -v
+
+	Para conectar un Proyecto a GitHub (para nuevos proyectos creados con git init)
+	>git remote add origin <https://YourGitHubRepoURL>
+	> git push -u origin main
+
+	change the remote with
+	>git remote set-url origin <new-url>
+
+	Rebasing local branch with latest from qa/automation on your local branch
+	git checkout <yourbranch>			//te cambias a tu branch
+	git fetch origin					//traes info Nueva del remoto
+	git rebase origin/qa/automation		//reaplicas tus commits encima del branch actualizado
+	git push --force-with-lease			//actualizas el remote con el nuevo historial
+
+
+
+
+
+The three following commands connect a local Git repository to a repository on GitHub and upload your code to it for the first time.
+>git remote add origin https://github.com/rco2021/CodeRepo.git
+>git branch -M main
+>git push -u origin main
+
+	EXPLANATION (of the commands above)
+	1. git remote add origin https://github.com/rco2021/CodeRepo.git
+
+	This registers a remote repository. A “remote” is just a named link to a copy of your project hosted somewhere else. Here the name is origin (the conventional default name) and it points to CodeRepo on the 	GitHub account rco2021. Nothing is uploaded yet; this only saves the address so Git knows where to push to later.
+
+	2. git branch -M main
+
+	This renames your current branch to main. The -M flag means “move/rename and force it,” so it works even if a branch named main already exists. It’s commonly used because older versions of Git named the 	default branch master, while GitHub now uses main. Making them match avoids confusion when you push.
+
+	3. git push -u origin main
+
+	This uploads your local main branch and its commit history to the origin remote. The -u flag (short for --set-upstream) links your local main to origin/main, so from then on you can just type git push or git pull 	without specifying the remote and branch.
+
+	Before running them, make sure you have:
+
+	Run git init in your project folder (if it isn’t a repo yet).
+	Made at least one commit (git add . then git commit -m "message"). Pushing with no commits fails.
+	Created the empty CodeRepo repository on GitHub first.
+
+	You’ll also be asked to authenticate. GitHub no longer accepts account passwords for pushes over HTTPS, so you’ll need a personal access token or a credential helper such as GitHub CLI (gh auth login).
+
+
+
+__________________________________________________________________________________________________________________
+Node commands
+
+Como crear un Proyecto de Node
+>pnpm init
+
+Como instalar TypeScript dentro del Proyecto
+>pnpm add --save-dev typescript @types/node	//el flag --save-dev es para instalar type script de manera local en el Proyecto, sin ese flag instala globalmente
+
+
+Configuracion de Typescript
+>pnpm exec tsc --init	//genera un archivo de configuracion
+
+para ejecutar los scripts del archivo package.json
+>pnpm build	// ejecuta el commando asociado al texto "build" definido en la seccion "scripts" dentro de package.json
+>pnpm start	// ejecuta el commando asociado al texto "start" definido en la seccion "scripts" dentro de package.json
+
+Listar todas las versions de nvm instaladas localmente
+>nvm list
