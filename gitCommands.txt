@@ -48,6 +48,15 @@ Git Commands (cheat sheet - RCO)
 	git config --global user.name "Ronald Castellon"
 	git config --global user.email "ronald.castellon@jalasoft.com"
 
+    Para listar las ramas
+    >git branch //lista las ramas locales
+    >git branch //lista ramas locales y remotas
+    >git branch -r  //lista solo ramas remotas
+    >git branch -v  //lista con el ultimo commit de cada rama
+
+    para actualizar la copia local de lo que hay en GitHub
+    >git fetch  //actualiza todos los elementos que no se ven en local y que estan en el repositorio de GitHub
+
 	Para mostrar a donde esta apuntando nuestro git
 	>git remote -v
 
