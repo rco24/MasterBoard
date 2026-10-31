@@ -1,0 +1,836 @@
+{
+  "odata.type": "HighJump.Platform.Models.Security.UserModel",
+  "Id": "15c4a2cf-b269-d479-4cf9-6bd6fe718803",
+  "Sid": null,
+  "Version": 0,
+  "TenantId": "",
+  "DefaultRoleId": "a2c2335b-7842-4c5b-a1d7-cb368c6dad2f",
+  "IsSystem": false,
+  "InheritUserId": null,
+  "ExpiryDate": null,
+  "IsEnabled": true,
+  "IsSSO": false,
+  "LogOnName": "rcotest3",
+  "Roles": [
+    {
+      "Id": "a2c2335b-7842-4c5b-a1d7-cb368c6dad2f",
+      "Version": 0,
+      "TenantId": "",
+      "Description": "Administrators",
+      "IsEnabled": true,
+      "IsSystem": true,
+      "AuthorizedProducts": [
+        {
+          "Id": "HighJump One Platform",
+          "UserLogOnName": null,
+          "UserPassword": null,
+          "AuthorizedProductModules": [],
+          "PermissionState": 2,
+          "CustomPermissionDefaultState": 2,
+          "WorkspaceControlDefaultPermissions": {
+            "AccessPermission": 2,
+            "CreatePermission": 2,
+            "UpdatePermission": 2,
+            "DeletePermission": 2
+          },
+          "CustomPermissions": [],
+          "TenantId": "",
+          "ProductGuid": "00000000-0000-0000-0000-000000000000"
+        }
+      ],
+      "UserWorkspaceUIConfiguration": {
+        "AutoExpandMenuOnSearch": true,
+        "AutoExpandUDFPanel": false,
+        "AutoHideNavigationPanel": true,
+        "AutoHidePresenceSystemColumns": false,
+        "ConsecutiveInsert": false,
+        "IsLyncEnabled": true,
+        "InheritUserUI": null
+      },
+      "InheritUserId": null,
+      "PasswordPolicy": {
+        "MinimumCharacters": 6,
+        "MinimumUppercaseCharacters": 1,
+        "MinimumLowercaseCharacters": 1,
+        "MinimumSpecialCharacters": 1,
+        "MinimumDigits": 1,
+        "ShouldNotContainName": true,
+        "CannotUseLastPasswords": 1,
+        "PasswordExpirationDays": 120
+      },
+      "SystemRoleId": "a2c2335b-7842-4c5b-a1d7-cb368c6dad2f",
+      "Sid": null,
+      "IsLocalSid": false,
+      "DefaultWorkflowMobileUI": "2e72eb39-8627-4187-a27c-5901d21f35d7",
+      "IdentityClaimsValues": [],
+      "IdentityClaims": null
+    },
+    {
+      "AuthorizedProducts": [],
+      "IdentityClaimsValues": [],
+      "Description": "Everyone",
+      "Id": "B16A2FAC-FDD7-4933-9A22-E3E6E6DE29F3",
+      "SystemRoleId": "B16A2FAC-FDD7-4933-9A22-E3E6E6DE29F3",
+      "IsEnabled": true,
+      "IsSystem": true,
+      "IsLocalSid": false,
+      "TenantId": ""
+    }
+  ],
+  "RequiredClaims": [],
+  "AuthorizedProducts": [
+    {
+      "Id": "HighJump One Platform",
+      "UserLogOnName": null,
+      "UserPassword": null,
+      "AuthorizedProductModules": [
+        {
+          "Description": "Default",
+          "Id": "",
+          "PermissionState": 0,
+          "WorkspaceControlDefaultPermissions": {
+            "AccessPermission": 0,
+            "CreatePermission": 0,
+            "DeletePermission": 0,
+            "UpdatePermission": 0
+          },
+          "WorkspaceControlPermissions": [
+            {
+              "Description": "Account Request Questions",
+              "Id": "Admin: Account Request Questions",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Account Requests",
+              "Id": "Admin: Account Requests",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Activate License",
+              "Id": "Admin: Infrastructure Licenses: Active",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Add Job Wizard",
+              "Id": "Admin: ScheduledTasks: AddJobWizard",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Agent Information",
+              "Id": "Admin: Infrastructure Agent Detail Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Alert Management",
+              "Id": "Admin: Alerts Start Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Alert Subscriptions",
+              "Id": "Admin: Alert Subscriptions",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Application Configuration",
+              "Id": "Admin: Infrastructure Application Configuration Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Application Resources",
+              "Id": "Admin: Application Resources",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Application Settings Migration",
+              "Id": "Admin: Infrastructure Application Migration Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Assign Plugin Agents Page",
+              "Id": "Admin: Assign Plugin Agents Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Authentication Certificates",
+              "Id": "Admin: Authentication Certificates",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Batch Upgrade Tenants",
+              "Id": "Admin: Infrastructure Batch Upgrade Tenants Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Custom Permissions",
+              "Id": "Admin: Custom Permissions",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Custom UI",
+              "Id": "Admin: Custom UI Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Deploy Package Wizard",
+              "Id": "Admin: Infrastructure: DeployPackageWizard",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Diagnostic Sessions",
+              "Id": "Admin: Diagnostic Sessions",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Admin: Account Request Question",
+              "Id": "Admin: Account Request Questions: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Application Resource",
+              "Id": "Admin: Application Resources: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Authentication Certificate",
+              "Id": "Admin: Authentication Certificates: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Custom Permission",
+              "Id": "Admin: Custom Permissions: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Database Configuration",
+              "Id": "Admin: Infrastructure: Applications: Database Configuration Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Identity Claim",
+              "Id": "Admin: Identity Claims: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Language",
+              "Id": "Admin: Languages: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Localization",
+              "Id": "Admin: Localizations: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Log Managers",
+              "Id": "Admin: Logs Manager Edit Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Mobile Screens",
+              "Id": "Admin: Mobile Screens: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Plugins",
+              "Id": "Admin: Plugins: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Role",
+              "Id": "Admin: Roles: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit Scheduled Task",
+              "Id": "Admin: ScheduledTasks: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit User",
+              "Id": "Admin: Users: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Edit User Defined Fields",
+              "Id": "Admin: User Defined Fields: Edit",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Email Templates",
+              "Id": "Admin: Email Templates Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Identity Claims",
+              "Id": "Admin: Identity Claims",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Import License",
+              "Id": "Admin: Infrastructure Licenses: Import",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Infrastructure",
+              "Id": "Infrastructure: Main Tab Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Infrastructure Agents",
+              "Id": "Admin: Infrastructure Agents Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Infrastructure Applications",
+              "Id": "Admin: Infrastructure Applications Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Languages",
+              "Id": "Admin: Languages",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Licenses",
+              "Id": "Admin: Infrastructure Licenses",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Localizations",
+              "Id": "Admin: Localizations",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Log Managers",
+              "Id": "Admin: Logs Manager Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Logs Viewer",
+              "Id": "Admin: Logs Viewer",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Messages",
+              "Id": "Admin: Message Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Middle Tier Parameters Page",
+              "Id": "Admin: MiddleTier Parameters Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Mobile Screens",
+              "Id": "Admin: Mobile Screens",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Network Mutexes",
+              "Id": "Admin: Network Mutexes",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "New Role Set-Up",
+              "Id": "Admin: Roles: NewSetUp",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "New Scheduled Task Set-Up",
+              "Id": "Admin: ScheduledTasks: NewSetUp",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "New User Set-Up",
+              "Id": "Admin: Users: NewSetUp",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Plugins",
+              "Id": "Admin: Plugins",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Print Applications",
+              "Id": "Admin: Print Applications",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Print Label Templates",
+              "Id": "Admin: Print Label Templates",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Print Stations",
+              "Id": "Admin: Print Stations",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Register Middle Tier",
+              "Id": "Admin: Infrastructure Agent Register MT Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Scheduled Tasks",
+              "Id": "Admin: ScheduledTasks",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Sessions Manager",
+              "Id": "Admin: Sessions Manager",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Subscribe Wizard",
+              "Id": "Admin: Alert Subscriptions: SubscribeWizard",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Subscribers",
+              "Id": "Admin: Subscribers Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "System Configuration",
+              "Id": "Admin: System Configuration",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Tenant Configuration - General",
+              "Id": "Admin: General Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Tenant Configuration - Services",
+              "Id": "Admin: Services Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Tenant Configuration - Services - Identity Provider",
+              "Id": "Admin: Identity Provider Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Tenants Page",
+              "Id": "Admin: Infrastructure: Tenants Page",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "User Defined Fields",
+              "Id": "Admin: User Defined Fields",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "User Secret Questions",
+              "Id": "Admin: User Secret Questions",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Users",
+              "Id": "Admin: Users",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Users",
+              "Id": "Admin: Roles",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Users and Roles",
+              "Id": "Admin: UsersAndRoles",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            },
+            {
+              "Description": "Web Help",
+              "Id": "Admin: Web Help",
+              "WorkspaceControlDefaultPermissions": {
+                "AccessPermission": 0,
+                "CreatePermission": 0,
+                "DeletePermission": 0,
+                "UpdatePermission": 0
+              }
+            }
+          ]
+        },
+        {
+          "Description": "Default Description",
+          "Id": "Default",
+          "PermissionState": 0,
+          "WorkspaceControlDefaultPermissions": {
+            "AccessPermission": 0,
+            "CreatePermission": 0,
+            "DeletePermission": 0,
+            "UpdatePermission": 0
+          },
+          "WorkspaceControlPermissions": []
+        }
+      ],
+      "PermissionState": 2,
+      "CustomPermissionDefaultState": 2,
+      "WorkspaceControlDefaultPermissions": {
+        "AccessPermission": 2,
+        "CreatePermission": 2,
+        "DeletePermission": 2,
+        "UpdatePermission": 2
+      },
+      "CustomPermissions": []
+    }
+  ],
+  "IdentityClaimsValues": [],
+  "Profile": {
+    "FirstName": "rco",
+    "Phone": "1234567890987",
+    "Email": "rco@email.com",
+    "PasswordExpiredEmailDate": null,
+    "AllowEmailHtml": true,
+    "ChangePasswordOnNextLogOn": false,
+    "CustomUIPreferences": false,
+    "AutoHideNavigationPanel": false
+  },
+  "AuthorizedProducts@odata.type": "Collection(HighJump.Platform.Models.Security.AuthorizedProductModel)"
+}
