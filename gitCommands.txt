@@ -1,13 +1,22 @@
 Git Commands (cheat sheet - RCO)
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<INICIAR PROYECTO>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	Inicializar un nuevo repositorio
 	>git init
-
-	Clonar un repo
-	>git clone <url>	//If repo is not found try using Windows Credential Manager and remove any git credential that is not related to the repo you attempt to clone
 
 	Para bajar los ultimos cambios del repositorio
 	>git pull origin main		//main en este ejemplo es la rama donde estamos ubicados
 
+	Para conectar un Proyecto a GitHub (para nuevos proyectos creados con git init)
+	>git remote add origin <https://YourGitHubRepoURL>
+	> git push -u origin main
+
+	Para cambiar a otro proyecto
+	>git remote set-url origin <new-url>
+
+	Clonar un repo // Aplica a un proyecto ya existente, ya no hace falta los comandos anteriores (init, pull remote add..)
+	>git clone <url>	//If repo is not found try using Windows Credential Manager and remove any git credential that is not related to the repo you attempt to clone
+
+    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<OPERACIONES CON git>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	Muestra que archivos se agregaron/modificaron
 	 >git status
 
@@ -22,11 +31,6 @@ Git Commands (cheat sheet - RCO)
 	>git switch -c feature/new-branch-name  //flag 'c' significa create, luego va el nombre de la rama
 	>git checkout -b feature/new-branch-name // flag 'b' significa branch
 
-	Para guardar cambios temporalmente en local
-	>git stash
-	>git stash list	//muestra los cambios guardados con stash
-	>git stash apply 	//recupera los cambios de stash y mantiene lo guardado
-	>git stash pop		//los cambios guardados se recuperan y se borra lo guardado en stash
 
 	Agregar archivos para el commit
 	>git add <filename.extesion>
@@ -38,6 +42,12 @@ Git Commands (cheat sheet - RCO)
 	Para hacer push de un commit
 	>git push -u origin main	//aqui esta subiendo la rama 'main' a GitHub.
 	>git push -u origin HEAD	//aqui esta subiendo la rama actual donde estas posicionado, con HEAD no se necesita especificar el nombre de la rama
+
+	Para guardar cambios temporalmente en local
+	>git stash
+	>git stash list	//muestra los cambios guardados con stash
+	>git stash apply 	//recupera los cambios de stash y mantiene lo guardado
+	>git stash pop		//los cambios guardados se recuperan y se borra lo guardado en stash
 
 	Para mostrar los logs de los commits hechos
 	>git log
@@ -60,21 +70,11 @@ Git Commands (cheat sheet - RCO)
 	Para mostrar a donde esta apuntando nuestro git
 	>git remote -v
 
-	Para conectar un Proyecto a GitHub (para nuevos proyectos creados con git init)
-	>git remote add origin <https://YourGitHubRepoURL>
-	> git push -u origin main
-
-	change the remote with
-	>git remote set-url origin <new-url>
-
 	Rebasing local branch with latest from qa/automation on your local branch
 	git checkout <yourbranch>			//te cambias a tu branch
 	git fetch origin					//traes info Nueva del remoto
 	git rebase origin/qa/automation		//reaplicas tus commits encima del branch actualizado
 	git push --force-with-lease			//actualizas el remote con el nuevo historial
-
-
-
 
 
 The three following commands connect a local Git repository to a repository on GitHub and upload your code to it for the first time.
@@ -102,7 +102,6 @@ The three following commands connect a local Git repository to a repository on G
 	Created the empty CodeRepo repository on GitHub first.
 
 	You’ll also be asked to authenticate. GitHub no longer accepts account passwords for pushes over HTTPS, so you’ll need a personal access token or a credential helper such as GitHub CLI (gh auth login).
-
 
 
 __________________________________________________________________________________________________________________
